@@ -162,7 +162,7 @@ var _jsxFileName = "C:\\Users\\mly\\Desktop\\nextjs\\pages\\auth\\index.js";
 
 
 
-var authIndexPage = function authIndexPage() {
+var authIndexPage = function authIndexPage(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
@@ -175,7 +175,7 @@ var authIndexPage = function authIndexPage() {
       lineNumber: 8
     },
     __self: this
-  }, "The Auth Index Page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, props.appName), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
     name: "Michael",
     age: "22",
     __source: {
@@ -193,6 +193,17 @@ var authIndexPage = function authIndexPage() {
     },
     __self: this
   }, "Go to Main Page"));
+};
+
+authIndexPage.getInitialProps = function (context) {
+  var promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve({
+        appName: "Super App Auth Page"
+      });
+    }, 1000);
+  });
+  return promise;
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (authIndexPage);
