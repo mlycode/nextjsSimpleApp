@@ -3,11 +3,11 @@
     "static/development/dll/dll_4a2ab6ce0cb456fbfead.js"
   ],
   "pages": {
-    "/_app": [
+    "/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/_error": [
+    "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
